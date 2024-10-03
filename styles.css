@@ -388,6 +388,29 @@ h3.course-header {
     padding: 60px 0;
 }
 
+/* Style for LinkedIn and GitHub Icons */
+.linkedin-icon i {
+    color: #0077B5; /* LinkedIn's official blue color */
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.github-icon i {
+    color: #333; /* GitHub's official dark color */
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+/* Add hover effect */
+.linkedin-icon i:hover {
+    color: #005582; /* Darker shade of LinkedIn blue on hover */
+}
+
+.github-icon i:hover {
+    color: #6e5494; /* Slightly lighter purple for GitHub on hover */
+}
+
+
 /* Footer */
 footer {
     background: #343a40;
