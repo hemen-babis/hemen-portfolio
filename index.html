@@ -1,6 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +14,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- Add Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 
 <body>
@@ -28,28 +30,19 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Header Section with Introduction -->
     <header class="header-section">
-        <!-- Content with Computer Chip Profile Picture -->
         <div class="overlay-content text-white text-left">
             <div class="container">
                 <div class="row align-items-center">
@@ -68,13 +61,12 @@
             </div>
         </div>
     </header>
-    
 
     <!-- About Me Section -->
     <section id="about" class="about-section py-5">
         <div class="container">
             <h2 class="text-center">About Me</h2>
-            <p class="text-center mt-3">I am Hemen Babis, a senior at Portland State University majoring in Computer Science and Mathematics. I am passionate about Quantum Computing, Generative AI, and Software Engineering. I have developed AI-driven applications, and have a strong foundation in algorithms, data structures, and full software lifecycle development.</p>
+            <p class="text-center mt-3">I am Hemen Babis, a senior at Portland State University majoring in Computer Science and Mathematics. I am passionate about Quantum Computing, Generative AI, and Software Engineering. I have developed AI-driven applications and have a strong foundation in algorithms, data structures, and full software lifecycle development.</p>
         </div>
     </section>
 
@@ -178,198 +170,238 @@
             </div>
         </div>
     </section>
-    
-    <section id="education" class="education-section py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Relevant Coursework</h2>
-    
-            <!-- Row for side-by-side layout -->
-            <div class="row">
-                <!-- Computer Science Coursework -->
-                <div class="col-md-6">
-                    <div class="course-box">
-                        <h3 class="text-center mb-3">Computer Science Courses</h3>
-                        <div class="accordion" id="csCoursesAccordion">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingCS">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCS" aria-expanded="false" aria-controls="collapseCS">
-                                        View Courses
-                                    </button>
-                                </h2>
-                                <div id="collapseCS" class="accordion-collapse collapse" aria-labelledby="headingCS" data-bs-parent="#csCoursesAccordion">
-                                    <div class="accordion-body">
-                                        <ul>
-                                            <li>CS 350: Algorithms & Complexity</li>
-                                            <li>CS 486: Intro to Database Management Systems</li>
-                                            <li>CS 302: Programming Methods and Software Implementation</li>
-                                            <li>CS 314: Elementary Software Engineering</li>
-                                            <li>CS 333: Intro to Operating Systems</li>
-                                            <li>CS 163: Data Structures</li>
-                                            <li>CS 201: Computer Systems Programming</li>
-                                            <li>CS 250: Discrete Structures I</li>
-                                            <li>CS 251: Discrete Structures II</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Mathematics Coursework -->
-                <div class="col-md-6">
-                    <div class="course-box">
-                        <h3 class="text-center mb-3">Mathematics Courses</h3>
-                        <div class="accordion" id="mathCoursesAccordion">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingMath">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMath" aria-expanded="false" aria-controls="collapseMath">
-                                        View Courses
-                                    </button>
-                                </h2>
-                                <div id="collapseMath" class="accordion-collapse collapse" aria-labelledby="headingMath" data-bs-parent="#mathCoursesAccordion">
-                                    <div class="accordion-body">
-                                        <ul>
-                                            <li>MTH 254: Calculus IV</li>
-                                            <li>MTH 343: Applied Linear Algebra</li>
-                                            <li>MTH 346: Number Theory</li>
-                                            <li>MTH 410: Quantum Algorithms for Data Science and Machine Learning</li>
-                                            <li>MTH 311: Intro to Math Analysis I</li>
-                                            <li>MTH 344: Intro to Group Theory & Applications</li>
-                                            <li>MTH 256: Applied Differential Equations</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-<!-- Experience Section -->
+
+    <!-- Experience Section -->
+    <!-- Experience Section -->
 <section id="experience" class="experience-section py-5">
     <div class="container">
         <h2 class="text-center">Experience</h2>
-        <div class="row mt-4">
-            <div class="col-md-6">
-                <div class="experience-box">
+        <div class="timeline">
+            <!-- Experience 1 -->
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-laptop-code"></i> <!-- Icon representing software development -->
+                </div>
+                <div class="timeline-content">
                     <h4>Software Engineer Intern</h4>
-                    <p><strong>Maryland Tutoring Services</strong> | Feb 2023 - Present</p>
-                    <p>Maryland, United States</p>
-                    <ul>
-                        <li>At Maryland Tutoring Services, I spearhead the development of AI-powered tools to automate and optimize educational processes, leveraging LangChain to streamline tutoring operations. I collaborate closely with senior engineers through every phase of the software development lifecycle, including architecture design, implementation, and rigorous testing. I also play a pivotal role in mentoring junior developers, contributing to team productivity and fostering an environment of continuous learning.</li>
-                    </ul>
+                    <h5>Maryland Tutoring Services <span>| Feb 2023 - Present</span></h5>
+                    <p>At Maryland Tutoring Services, I spearhead the development of AI-powered tools to automate and optimize educational processes, leveraging LangChain to streamline tutoring operations. I collaborate closely with senior engineers through every phase of the software development lifecycle, from architecture design to testing and deployment.</p>
+                    <p><strong>Technologies:</strong> Python, LangChain, Google Cloud</p>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="experience-box">
+
+            <!-- Experience 2 -->
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-bullhorn"></i> <!-- Icon representing marketing -->
+                </div>
+                <div class="timeline-content">
                     <h4>Marketing And Administrative Assistant</h4>
-                    <p><strong>Xpose Hope</strong> | Jun 2022 - Sep 2022</p>
-                    <p>Portland, Oregon, United States</p>
-                    <ul>
-                        <li>As a Marketing and Administrative Assistant at Xpose Hope, I was responsible for curating and designing engaging content using Canva, boosting social media interaction by 30%. My role involved researching potential donors and grant opportunities to drive funding efforts while managing day-to-day administrative tasks. I also coordinated volunteer efforts, supporting organizational growth and community outreach.</li>
-                    </ul>
+                    <h5>Xpose Hope <span>| Jun 2022 - Sep 2022</span></h5>
+                    <p>As a Marketing and Administrative Assistant at Xpose Hope, I was responsible for curating and designing engaging content using Canva, boosting social media interaction by 30%. My role involved researching possible donors and grant opportunities while managing volunteer coordination and daily administrative tasks.</p>
+                    <p><strong>Technologies:</strong> Canva, Social Media Platforms</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Education Section -->
+
+<!-- Education Section with Flashcard Style -->
 <section id="education" class="education-section py-5">
     <div class="container">
         <h2 class="text-center">Education</h2>
         <div class="row mt-4">
-            <div class="col-md-6">
-                <div class="education-box">
-                    <h4>Portland State University Honors College</h4>
-                    <p><strong>Bachelor's Degree in Mathematics and Computer Science</strong></p>
-                    <p>2023 - 2025 | Portland, Oregon, United States</p>
-                    <p>I am pursuing a double major in Mathematics and Computer Science at the prestigious Honors College of Portland State University. My education focuses on developing cutting-edge skills in different fields positioning me to tackle complex technical challenges in both academic and professional settings.</p>
-                </div>
-                <div class="education-box mt-4">
-                    <h4>Southridge High School</h4>
-                    <p><strong>High School Diploma</strong></p>
-                    <p>2021 - 2023 | Beaverton, Oregon, United States</p>
-                    <p>Graduated with honors, completing a rigorous academic program that prepared me for advanced studies in mathematics and computer science.</p>
+            <!-- Flashcard 1: Bachelor's Degree -->
+            <div class="col-md-4">
+                <div class="flashcard">
+                    <div class="flashcard-front">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Bachelor's Degree</h4>
+                        <h5>Mathematics & Computer Science</h5>
+                        <p>Portland State University Honors College</p>
+                    </div>
+                    <div class="flashcard-back">
+                        <h4>Details</h4>
+                        <p>Expected Graduation: Dec 2025</p>
+                        <p>I am pursuing a double major in Mathematics and Computer Science at the prestigious Portland State University. My education focuses on developing cutting-edge skills in different fields positioning me to tackle complex challenges in both academic and professional settings.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="education-box">
-                    <h4>Portland Community College</h4>
-                    <p><strong>Associate's Degree in Computer Science</strong></p>
-                    <p>2022 - 2023 | Portland, Oregon, United States</p>
-                    <p>Through the Early College High School Program at Portland Community College, I’ve achieved sophomore standing at university level while still in high school. This program allowed me to accelerate my academic career, completing foundational courses in programming, data structures, and discrete mathematics with distinction.</p>
+
+            <!-- Flashcard 2: Associate's Degree -->
+            <div class="col-md-4">
+                <div class="flashcard">
+                    <div class="flashcard-front">
+                        <div class="education-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h4>Associate's Degree</h4>
+                        <h5>Computer Science</h5>
+                        <p>Portland Community College</p>
+                    </div>
+                    <div class="flashcard-back">
+                        <h4>Details</h4>
+                        <p>2022 - 2023</p>
+                        <p>Through the Early College High School Program at PCC, I’ve achieved sophomore standing at university level while still in high school. It allowed me to accelerate my academic career, completing foundational courses.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flashcard 3: High School Diploma -->
+            <div class="col-md-4">
+                <div class="flashcard">
+                    <div class="flashcard-front">
+                        <div class="education-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <h4>High School Diploma</h4>
+                        <p>Southridge High School</p>
+                    </div>
+                    <div class="flashcard-back">
+                        <h4>Details</h4>
+                        <p>2021 - 2023</p>
+                        <p>Graduated with honors, completing a rigorous academic program that prepared me for advanced studies in mathematics and computer science.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Honors & Awards Section -->
+<section id="relevant-coursework" class="education-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Relevant Coursework</h2>
+
+        <div class="row">
+            <!-- Computer Science Coursework -->
+            <div class="col-md-6">
+                <div class="course-box" id="cs-courses">
+                    <h3 class="course-header text-center mb-3">Computer Science</h3>
+                    <ul class="course-list">
+                        <li>CS 350: Algorithms & Complexity</li>
+                        <li>CS 486: Intro to Database Management Systems</li>
+                        <li>CS 302: Programming Methods and Software Implementation</li>
+                        <li>CS 314: Elementary Software Engineering</li>
+                        <li>CS 333: Intro to Operating Systems</li>
+                        <li>CS 163: Data Structures</li>
+                        <li>CS 201: Computer Systems Programming</li>
+                        <li>CS 250: Discrete Structures I</li>
+                        <li>CS 251: Discrete Structures II</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Mathematics Coursework -->
+            <div class="col-md-6">
+                <div class="course-box" id="math-courses">
+                    <h3 class="course-header text-center mb-3">Mathematics</h3>
+                    <ul class="course-list">
+                        <li>MTH 254: Calculus IV</li>
+                        <li>MTH 343: Applied Linear Algebra</li>
+                        <li>MTH 346: Number Theory</li>
+                        <li>MTH 410: Quantum Algorithms for Data Science and Machine Learning</li>
+                        <li>MTH 311: Intro to Math Analysis I</li>
+                        <li>MTH 344: Intro to Group Theory & Applications</li>
+                        <li>MTH 256: Applied Differential Equations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+ <!-- Awards Section -->
 <section id="awards" class="awards-section py-5">
     <div class="container">
         <h2 class="text-center">Honors & Awards</h2>
         <div class="row mt-4">
-            <div class="col-md-6">
-                <div class="award-box">
+            <!-- Award Card 1: Honors Laurels Scholarship -->
+            <div class="col-md-4">
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
                     <h4>Honors Laurels Scholarship</h4>
-                    <p><strong>Portland State University Honors College</strong> | Aug 2023</p>
-                    <p>Awarded the prestigious Honors Laurels Scholarship, recognizing my outstanding academic performance and commitment to excellence. This scholarship provides me with the opportunity to pursue a tuition-free degree in Mathematics and Computer Science.</p>
-                </div>
-                <div class="award-box mt-4">
-                    <h4>Tuition-Free Degree Award</h4>
-                    <p><strong>Portland State University Honors College</strong> | Aug 2023</p>
-                    <p>Received the Tuition-Free Degree Award, which enables me to complete my degree at Portland State University while being fully supported financially, an honor granted to students with exceptional academic and leadership potential.</p>
-                </div>
-                <div class="award-box mt-4">
-                    <h4>National Honors Society Certificate</h4>
-                    <p><strong>National Honors Society</strong> | Nov 2022</p>
-                    <p>Recognized by the National Honors Society for exemplary academic achievement and community service, reflecting my dedication to both personal development and giving back to my community.</p>
+                    <h5>Portland State University Honors College</h5>
+                    <p class="award-year">August 2023</p>
+                    <p>Awarded the prestigious Honors Laurels Scholarship, recognizing my outstanding academic performance and commitment to excellence.</p>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="award-box">
-                    <h4>President's List</h4>
-                    <p><strong>Portland Community College</strong> | Aug 2022</p>
-                    <p>Placed on the President’s List for maintaining a perfect academic record during my tenure at Portland Community College, a testament to my hard work and focus on academic success.</p>
+
+            <!-- Award Card 2: Tuition-Free Degree Award -->
+            <div class="col-md-4">
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h4>Tuition-Free Degree Award</h4>
+                    <h5>Portland State University Honors College</h5>
+                    <p class="award-year">August 2023</p>
+                    <p>This award provides me with a tuition-free education, granted for my academic excellence and leadership potential.</p>
                 </div>
-                <div class="award-box mt-4">
+            </div>
+
+            <!-- Award Card 3: National Honors Society Certificate -->
+            <div class="col-md-4">
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h4>National Honors Society Certificate</h4>
+                    <h5>National Honors Society</h5>
+                    <p class="award-year">November 2022</p>
+                    <p>Recognized for exemplary academic achievement and community service, reflecting my dedication to both personal and societal development.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <!-- Award Card 4: President's List (Aug 2022) -->
+            <div class="col-md-4">
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h4>President's List</h4>
+                    <h5>Portland Community College</h5>
+                    <p class="award-year">August 2022</p>
+                    <p>Awarded for maintaining a perfect academic record and demonstrating exceptional discipline and dedication to my studies.</p>
+                </div>
+            </div>
+
+            <!-- Award Card 5: President's List (Jun 2022) -->
+            <div class="col-md-4">
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h4>President's List</h4>
+                    <h5>Portland Community College</h5>
+                    <p class="award-year">June 2022</p>
+                    <p>Maintained academic excellence, earning recognition for outstanding performance and dedication to my studies.</p>
+                </div>
+            </div>
+
+            <!-- Award Card 6: Dean's List -->
+            <div class="col-md-4">
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
                     <h4>Dean's List</h4>
-                    <p><strong>Portland Community College</strong> | Apr 2022</p>
-                    <p>Earned placement on the Dean’s List, highlighting my continued dedication to maintaining academic excellence while balancing rigorous coursework and extracurricular commitments.</p>
+                    <h5>Portland Community College</h5>
+                    <p class="award-year">April 2022</p>
+                    <p>Recognized for maintaining a high GPA while balancing academic rigor and extracurricular commitments.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Languages Section -->
-<section id="languages" class="languages-section py-5" style="background-color: #1c1e26;">
-    <div class="container">
-        <h2 class="text-center text-white">Languages</h2>
-        <div class="row mt-4">
-            <div class="col-md-6">
-                <div class="language-box">
-                    <h4>English</h4>
-                    <p>Native or bilingual proficiency</p>
-                </div>
-                <div class="language-box mt-4">
-                    <h4>Spanish</h4>
-                    <p>Limited working proficiency</p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="language-box">
-                    <h4>Amharic</h4>
-                    <p>Native or bilingual proficiency</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section py-5 text-white bg-dark">
@@ -390,6 +422,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="scrollEffect.js"></script>
 
+</body>
 </html>
