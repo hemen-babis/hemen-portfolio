@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    background-color: #1c1e26;
+}
+
+h1, h2, h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 60px 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(28, 30, 38, 0.95); /* Dark navbar with slight transparency */
+}
+
+/* Hero Section for Projects */
+#hero-projects {
+    background: #0D6EFD; /* Vibrant primary color */
+}
+
+#hero-projects h1 {
+    font-size: 4rem;
+}
+
+#hero-projects p {
+    font-size: 1.2rem;
+}
+
+/* Projects Section */
+.projects-section {
+    background-color: #1c1e26;
+    color: white;
+}
+
+.project-card {
+    background-color: #333;
+    color: white;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.project-card .btn-outline-light {
+    border-color: #0D6EFD;
+    color: #0D6EFD;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-card .btn-outline-light:hover {
+    background-color: #0D6EFD;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+/* Centering the Hero Section Content */
+.hero-centered {
+    height: 40vh; /* Make the section take up the full viewport height */
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    text-align: center; /* Center the text */
+}

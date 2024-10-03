@@ -1,45 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Portfolio</title>
+    <meta name="description" content="Hemen Babis - Computer Science and Mathematics major specializing in Quantum Computing, Generative AI, and Software Development.">
+    <meta name="keywords" content="Software Engineer, Quantum Computing, AI, Machine Learning, Google Cloud, C++, Python, LangChain, Algorithms">
+    <meta name="author" content="Hemen Babis">
+    <title>Hemen Babis - Portfolio</title>
+
+    <!-- Include Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto+Mono:wght@300;500&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Hemen Babis</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header-section">
+        <!-- Content with Computer Chip Profile Picture -->
+        <div class="overlay-content text-white text-left">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="photo.png" alt="Hemen Babis" class="chip-profile-img">
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="display-4">Hemen Babis</h1>
+                        <p class="lead">Computer Science & Mathematics Major | Software Engineer | Quantum & AI Enthusiast</p>
+                        <div class="mt-4">
+                            <a href="#contact" class="btn btn-primary">Contact Me</a>
+                            <a href="your_resume_link.pdf" class="btn btn-outline-light">View My Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I’m [Your Name], a passionate [Your Role, e.g., Web Developer, Data Scientist].</p>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <h2 class="text-center">About Me</h2>
+            <p class="text-center mt-3">I am Hemen Babis, a senior at Portland State University majoring in Computer Science and Mathematics. I am passionate about Quantum Computing, Generative AI, and Software Engineering. I have developed AI-driven applications, and have a strong foundation in algorithms, data structures, and full software lifecycle development.</p>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Here are some of my recent projects:</p>
-        <ul>
-            <li><a href="#">Project 1</a> - Brief description of your project.</li>
-            <li><a href="#">Project 2</a> - Brief description of your project.</li>
-        </ul>
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section py-5">
+        <div class="container">
+            <h2 class="text-center">Skills</h2>
+            <div class="row text-center mt-4">
+                <div class="col-md-3">
+                    <img src="icons/cpp.png" alt="C++" class="skill-icon">
+                    <h4>C++</h4>
+                </div>
+                <div class="col-md-3">
+                    <img src="icons/python.png" alt="Python" class="skill-icon">
+                    <h4>Python</h4>
+                </div>
+                <div class="col-md-3">
+                    <img src="icons/cloud.png" alt="Google Cloud" class="skill-icon">
+                    <h4>Google Cloud</h4>
+                </div>
+                <div class="col-md-3">
+                    <img src="icons/js.png" alt="JavaScript" class="skill-icon">
+                    <h4>JavaScript</h4>
+                </div>
+            </div>
+            <div class="row text-center mt-4">
+                <div class="col-md-3">
+                    <img src="icons/sql.png" alt="SQL" class="skill-icon">
+                    <h4>SQL</h4>
+                </div>
+                <div class="col-md-3">
+                    <img src="icons/langchain.png" alt="LangChain" class="skill-icon">
+                    <h4>LangChain</h4>
+                </div>
+                <div class="col-md-3">
+                    <img src="icons/qiskit.png" alt="Quantum Computing" class="skill-icon">
+                    <h4>Quantum Computing</h4>
+                </div>
+                <div class="col-md-3">
+                    <img src="icons/git.png" alt="Git" class="skill-icon">
+                    <h4>Git</h4>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section py-5">
+        <div class="container">
+            <h2 class="text-center">Projects</h2>
+            <div class="row mt-4">
+                <!-- Project 1 -->
+                <div class="col-md-6">
+                    <div class="card hover-card">
+                        <div class="card-body">
+                            <h4 class="card-title">Generative AI Application</h4>
+                            <p class="card-text">Developed an AI-driven application using LangChain to automate tasks for Maryland Tutoring Services.</p>
+                            <p><strong>Technologies:</strong> Python, LangChain, Google Cloud</p>
+                            <a href="https://github.com/yourprojectlink" class="btn btn-primary">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-6">
+                    <div class="card hover-card">
+                        <div class="card-body">
+                            <h4 class="card-title">Quantum Algorithms for Machine Learning</h4>
+                            <p class="card-text">Developed quantum-based algorithms to improve machine learning efficiency.</p>
+                            <p><strong>Technologies:</strong> Python, Qiskit, Linear Algebra</p>
+                            <a href="https://github.com/yourprojectlink" class="btn btn-primary">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <!-- Project 3 -->
+                <div class="col-md-6">
+                    <div class="card hover-card">
+                        <div class="card-body">
+                            <h4 class="card-title">Personal Finance Tracker</h4>
+                            <p class="card-text">A web application to track income, expenses, and budgets.</p>
+                            <p><strong>Technologies:</strong> JavaScript, Python, Flask</p>
+                            <a href="https://github.com/yourprojectlink" class="btn btn-primary">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="col-md-6">
+                    <div class="card hover-card">
+                        <div class="card-body">
+                            <h4 class="card-title">E-commerce Web Application</h4>
+                            <p class="card-text">Built a full-stack e-commerce application with payment integration.</p>
+                            <p><strong>Technologies:</strong> React, Node.js, MongoDB</p>
+                            <a href="https://github.com/yourprojectlink" class="btn btn-primary">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="projects.html" class="btn btn-outline-light">View All Projects</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="education" class="education-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Relevant Coursework</h2>
+    
+            <!-- Row for side-by-side layout -->
+            <div class="row">
+                <!-- Computer Science Coursework -->
+                <div class="col-md-6">
+                    <div class="course-box">
+                        <h3 class="text-center mb-3">Computer Science Courses</h3>
+                        <div class="accordion" id="csCoursesAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingCS">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCS" aria-expanded="false" aria-controls="collapseCS">
+                                        View Courses
+                                    </button>
+                                </h2>
+                                <div id="collapseCS" class="accordion-collapse collapse" aria-labelledby="headingCS" data-bs-parent="#csCoursesAccordion">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>CS 350: Algorithms & Complexity</li>
+                                            <li>CS 486: Intro to Database Management Systems</li>
+                                            <li>CS 302: Programming Methods and Software Implementation</li>
+                                            <li>CS 314: Elementary Software Engineering</li>
+                                            <li>CS 333: Intro to Operating Systems</li>
+                                            <li>CS 163: Data Structures</li>
+                                            <li>CS 201: Computer Systems Programming</li>
+                                            <li>CS 250: Discrete Structures I</li>
+                                            <li>CS 251: Discrete Structures II</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Mathematics Coursework -->
+                <div class="col-md-6">
+                    <div class="course-box">
+                        <h3 class="text-center mb-3">Mathematics Courses</h3>
+                        <div class="accordion" id="mathCoursesAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingMath">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMath" aria-expanded="false" aria-controls="collapseMath">
+                                        View Courses
+                                    </button>
+                                </h2>
+                                <div id="collapseMath" class="accordion-collapse collapse" aria-labelledby="headingMath" data-bs-parent="#mathCoursesAccordion">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>MTH 254: Calculus IV</li>
+                                            <li>MTH 343: Applied Linear Algebra</li>
+                                            <li>MTH 346: Number Theory</li>
+                                            <li>MTH 410: Quantum Algorithms for Data Science and Machine Learning</li>
+                                            <li>MTH 311: Intro to Math Analysis I</li>
+                                            <li>MTH 344: Intro to Group Theory & Applications</li>
+                                            <li>MTH 256: Applied Differential Equations</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- Experience Section -->
+<section id="experience" class="experience-section py-5">
+    <div class="container">
+        <h2 class="text-center">Experience</h2>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="experience-box">
+                    <h4>Software Engineer Intern</h4>
+                    <p><strong>Maryland Tutoring Services</strong> | Feb 2023 - Present</p>
+                    <p>Maryland, United States</p>
+                    <ul>
+                        <li>At Maryland Tutoring Services, I spearhead the development of AI-powered tools to automate and optimize educational processes, leveraging LangChain to streamline tutoring operations. I collaborate closely with senior engineers through every phase of the software development lifecycle, including architecture design, implementation, and rigorous testing. I also play a pivotal role in mentoring junior developers, contributing to team productivity and fostering an environment of continuous learning.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="experience-box">
+                    <h4>Marketing And Administrative Assistant</h4>
+                    <p><strong>Xpose Hope</strong> | Jun 2022 - Sep 2022</p>
+                    <p>Portland, Oregon, United States</p>
+                    <ul>
+                        <li>As a Marketing and Administrative Assistant at Xpose Hope, I was responsible for curating and designing engaging content using Canva, boosting social media interaction by 30%. My role involved researching potential donors and grant opportunities to drive funding efforts while managing day-to-day administrative tasks. I also coordinated volunteer efforts, supporting organizational growth and community outreach.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="education-section py-5">
+    <div class="container">
+        <h2 class="text-center">Education</h2>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="education-box">
+                    <h4>Portland State University Honors College</h4>
+                    <p><strong>Bachelor's Degree in Mathematics and Computer Science</strong></p>
+                    <p>2023 - 2025 | Portland, Oregon, United States</p>
+                    <p>I am pursuing a double major in Mathematics and Computer Science at the prestigious Honors College of Portland State University. My education focuses on developing cutting-edge skills in different fields positioning me to tackle complex technical challenges in both academic and professional settings.</p>
+                </div>
+                <div class="education-box mt-4">
+                    <h4>Portland Community College</h4>
+                    <p><strong>Associate's Degree in Computer Science</strong></p>
+                    <p>2022 - 2023 | Portland, Oregon, United States</p>
+                    <p>Through the Early College High School Program at Portland Community College, I’ve achieved sophomore standing at university level while still in high school. This program allowed me to accelerate my academic career, completing foundational courses in programming, data structures, and discrete mathematics with distinction.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="education-box">
+                    <h4>Southridge High School</h4>
+                    <p><strong>High School Diploma</strong></p>
+                    <p>2021 - 2023 | Beaverton, Oregon, United States</p>
+                    <p>Graduated with honors, completing a rigorous academic program that prepared me for advanced studies in mathematics and computer science.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Volunteer Experience Section -->
+<section id="volunteer" class="volunteer-section py-5">
+    <div class="container">
+        <h2 class="text-center">Volunteer Experience</h2>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="volunteer-box">
+                    <h4>Supervisor</h4>
+                    <p><strong>American Red Cross</strong> | Mar 2022 - July 2022</p>
+                    <p>As a Supervisor for the American Red Cross, I have led volunteer efforts in organizing community-driven social service initiatives. My role involves ensuring operational efficiency and maintaining high engagement across various community outreach programs.</p>
+                </div>
+                <div class="volunteer-box mt-4">
+                    <h4>Peer Tutor</h4>
+                    <p><strong>Southridge High School</strong> | Mar 2022 - May 2023</p>
+                    <p>As a Peer Tutor, I’ve helped students master challenging concepts in a wide range of subjects, focusing on making learning enjoyable and accessible. I’ve consistently received positive feedback for my ability to explain complex topics in a clear, engaging way.</p>
+                </div>
+                <div class="volunteer-box mt-4">
+                    <h4>Social Media & Website Manager</h4>
+                    <p><strong>Beaverton Downtown Association</strong> | Mar 2022 - May 2022</p>
+                    <p>My role at Beaverton Downtown Association involves managing both social media strategy and website development. I’ve enhanced the organization’s digital footprint, driving community engagement and facilitating public outreach initiatives through targeted content.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="volunteer-box">
+                    <h4>Social Media Manager</h4>
+                    <p><strong>John’s Repentance</strong> | Dec 2023 - Present</p>
+                    <ul>
+                        <li>As the Social Media Manager for John’s Repentance, I lead content creation and manage campaigns across multiple platforms (Facebook, Instagram, YouTube, TikTok). I also spearhead website development efforts, ensuring a cohesive and compelling online presence for the organization.</li>
+                    </ul>
+                </div>
+                <div class="volunteer-box mt-4">
+                    <h4>Volunteer</h4>
+                    <p><strong>KidaneMihret Ethiopian Orthodox Tewahedo Church</strong> | Jun 2021 - Present</p>
+                    <p>In this role, I’ve supported various community service initiatives, contributing my time to assist with events, education programs, and general church activities. My work helps strengthen the church's connection with its local and global community.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Honors & Awards Section -->
+<section id="awards" class="awards-section py-5">
+    <div class="container">
+        <h2 class="text-center">Honors & Awards</h2>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="award-box">
+                    <h4>Honors Laurels Scholarship</h4>
+                    <p><strong>Portland State University Honors College</strong> | Aug 2023</p>
+                    <p>Awarded the prestigious Honors Laurels Scholarship, recognizing my outstanding academic performance and commitment to excellence. This scholarship provides me with the opportunity to pursue a tuition-free degree in Mathematics and Computer Science.</p>
+                </div>
+                <div class="award-box mt-4">
+                    <h4>Tuition-Free Degree Award</h4>
+                    <p><strong>Portland State University Honors College</strong> | Aug 2023</p>
+                    <p>Received the Tuition-Free Degree Award, which enables me to complete my degree at Portland State University while being fully supported financially, an honor granted to students with exceptional academic and leadership potential.</p>
+                </div>
+                <div class="award-box mt-4">
+                    <h4>National Honors Society Certificate</h4>
+                    <p><strong>National Honors Society</strong> | Nov 2022</p>
+                    <p>Recognized by the National Honors Society for exemplary academic achievement and community service, reflecting my dedication to both personal development and giving back to my community.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="award-box">
+                    <h4>President's List</h4>
+                    <p><strong>Portland Community College</strong> | Aug 2022</p>
+                    <p>Placed on the President’s List for maintaining a perfect academic record during my tenure at Portland Community College, a testament to my hard work and focus on academic success.</p>
+                </div>
+                <div class="award-box mt-4">
+                    <h4>Dean's List</h4>
+                    <p><strong>Portland Community College</strong> | Apr 2022</p>
+                    <p>Earned placement on the Dean’s List, highlighting my continued dedication to maintaining academic excellence while balancing rigorous coursework and extracurricular commitments.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Languages Section -->
+<section id="languages" class="languages-section py-5" style="background-color: #1c1e26;">
+    <div class="container">
+        <h2 class="text-center text-white">Languages</h2>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="language-box">
+                    <h4>English</h4>
+                    <p>Native or bilingual proficiency</p>
+                </div>
+                <div class="language-box mt-4">
+                    <h4>Spanish</h4>
+                    <p>Limited working proficiency</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="language-box">
+                    <h4>Amharic</h4>
+                    <p>Native or bilingual proficiency</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5 text-white bg-dark">
+        <div class="container">
+            <h2 class="text-center">Contact Me</h2>
+            <p class="text-center">I'm currently looking for internship and full-time opportunities. Feel free to reach out!</p>
+            <div class="text-center">
+                <p>Email: <a href="mailto:hemenbabis@gmail.com" class="text-white">hemenbabis@gmail.com</a></p>
+                <p>Phone: 971-330-9398</p>
+                <p><a href="https://www.linkedin.com/in/hemen-babis" class="text-white">LinkedIn Profile</a> | <a href="https://github.com/hemen-babis" class="text-white">GitHub</a></p>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>© 2023 [Your Name]. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-dark text-white">
+        <p>© 2024 Hemen Babis. All Rights Reserved.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
